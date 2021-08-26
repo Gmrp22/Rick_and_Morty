@@ -1,0 +1,26 @@
+<h1>PARRAFO</h1>
+
+<ol *ngIf="variable == 1">
+    <li>P</li>
+    <li>i</li>
+    <li>n</li>
+</ol>
+
+<h4 *ngFor="let a of arrayNumeros, 
+index as i">{{a}}, {{i}}</h4>
+
+
+
+<p [ngSwitch]="variable">
+<li *ngSwitchCase=1>UNO</li>
+<li *ngSwitchCase=2>DOS</li>
+<li *ngSwitchCase=3>TRES</li>   
+<li *ngSwitchDefault>NINGUNO 1,2,3</li>
+</p>
+
+<h1>{{para_hijo}}</h1>
+
+<input #valor type="number">
+<button (click)=
+"metodoEmit(valor.value)">
+    CLICK</button>

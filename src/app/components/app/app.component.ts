@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RickandMorty';
+  mensaje="Recibido_padre"
+
+  metodoRecib(item : string){
+    this.title=item
+  }
 }
